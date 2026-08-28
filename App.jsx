@@ -31,7 +31,10 @@ export default function App() {
     <div className="app-container">
       {/* Navigation */}
       <nav className="navbar">
-        <a className="logo" href="#">9T9 EMPIRE</a>
+        <a className="logo" href="#">
+          <img src="logo-dark.png" alt="9T9 EMPIRE" />
+          <span>9T9 EMPIRE</span>
+        </a>
         <div className="links">
           <a href="#story">STORY</a>
           <a href="#why">WHY US</a>
@@ -78,7 +81,7 @@ export default function App() {
         <div className="visual">
           <div className="circle">
             <div className="can">
-              <span>9T9 EMPIRE</span>
+              <img src="logo-white.png" alt="9T9 EMPIRE" className="can-logo" />
             </div>
           </div>
           <div className="badge b1">
@@ -141,6 +144,7 @@ export default function App() {
         </div>
         <div className="mfg-card">
           <div className="mfg-header">
+            <img src="logo-brand.png" alt="9T9 EMPIRE Logo" style={{ height: '54px', width: 'auto', marginBottom: '12px' }} />
             <div className="tag" style={{ marginBottom: '12px' }}>OFFICIAL UNIT &amp; LICENSE</div>
             <h3 className="mfg-title">9T9 EMPIRE</h3>
             <div className="mfg-lic">
@@ -202,7 +206,10 @@ export default function App() {
 
       {/* Footer */}
       <footer className="footer">
-        <div>© {new Date().getFullYear()} 9T9 EMPIRE. ALL RIGHTS RESERVED.</div>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '12px', flexWrap: 'wrap' }}>
+          <img src="logo-white.png" alt="9T9 EMPIRE Logo" style={{ height: '36px', width: 'auto' }} />
+          <span>© {new Date().getFullYear()} 9T9 EMPIRE. ALL RIGHTS RESERVED.</span>
+        </div>
         <div>
           H.NO 03, GALI NO 01, NAVBAHAR COLONY, CHHOLA ROAD, BHOPAL, MADHYA PRADESH
           462001

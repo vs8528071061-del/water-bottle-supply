@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>9T9 EMPIRE | Refresh Your Moment</title>
   <meta name="description" content="9T9 EMPIRE — a bold beverage brand from Bhopal, Madhya Pradesh." />
+  <link rel="icon" type="image/png" href="logo-brand.png" />
   <style>
     :root {
       --red: #008fcf;
@@ -43,20 +45,29 @@
       top: 0;
       left: 0;
       right: 0;
-      padding: 18px 6%;
+      padding: 14px 6%;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      background: rgba(255, 248, 233, 0.9);
+      background: rgba(255, 248, 233, 0.95);
       backdrop-filter: blur(12px);
       border-bottom: 1px solid #c9eaf3;
     }
 
     .logo {
-      font-size: 25px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 24px;
       font-weight: 1000;
-      letter-spacing: -1.5px;
-      color: var(--red);
+      letter-spacing: -1px;
+      color: var(--black);
+    }
+
+    .logo img {
+      height: 48px;
+      width: auto;
+      object-fit: contain;
     }
 
     .links {
@@ -78,8 +89,8 @@
       gap: 35px;
       align-items: center;
       background: radial-gradient(circle at 82% 22%, #70ddf6 0 10%, transparent 29%),
-                  radial-gradient(circle at 12% 88%, #c9f4fb 0 9%, transparent 28%),
-                  var(--cream);
+        radial-gradient(circle at 12% 88%, #c9f4fb 0 9%, transparent 28%),
+        var(--cream);
     }
 
     .tag {
@@ -174,25 +185,26 @@
     }
 
     .can {
-      width: 165px;
-      height: 320px;
+      width: 175px;
+      height: 330px;
       border: 7px solid #111;
       border-radius: 31px;
       background: linear-gradient(100deg, #151515, #5d5d5d, #111);
       display: flex;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
+      gap: 14px;
       transform: rotate(8deg);
       box-shadow: inset 10px 0 18px rgba(255, 255, 255, 0.14);
+      padding: 15px 10px;
     }
 
-    .can span {
-      color: #fff;
-      font-size: 32px;
-      font-weight: 1000;
-      letter-spacing: -2px;
-      transform: rotate(-90deg);
-      white-space: nowrap;
+    .can-logo {
+      width: 85px;
+      height: auto;
+      object-fit: contain;
+      filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.6));
     }
 
     .badge {
@@ -449,45 +461,58 @@
       .links {
         display: none;
       }
+
       .hero {
         grid-template-columns: 1fr;
         padding-top: 125px;
       }
+
       .visual {
         min-height: 400px;
       }
+
       .circle {
         width: 320px;
         height: 320px;
       }
+
       .can {
         width: 135px;
         height: 260px;
       }
+
       .cards,
       .about {
         grid-template-columns: 1fr;
       }
+
       .mfg-card {
         grid-template-columns: 1fr;
         padding: 26px 20px;
       }
+
       .head {
         display: block;
       }
+
       .head p {
         margin-top: 18px;
       }
+
       .about {
         gap: 35px;
       }
     }
   </style>
 </head>
+
 <body>
   <!-- Navigation -->
   <nav>
-    <a class="logo" href="#">9T9 EMPIRE</a>
+    <a class="logo" href="#">
+      <img src="logo-dark.png" alt="9T9 EMPIRE" />
+      <span>9T9 EMPIRE</span>
+    </a>
     <div class="links">
       <a href="#story">STORY</a>
       <a href="#why">WHY US</a>
@@ -511,20 +536,12 @@
       </p>
       <div class="buttons">
         <a class="btn primary" href="#contact">GET IN TOUCH</a>
-        <a
-          class="btn white"
-          href="https://www.instagram.com/drink9t9?igsi=MXFwazJmbzd6dGozcg=="
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a class="btn white" href="https://www.instagram.com/drink9t9?igsi=MXFwazJmbzd6dGozcg==" target="_blank"
+          rel="noopener noreferrer">
           INSTAGRAM ↗
         </a>
-        <a
-          class="btn whatsapp"
-          href="https://wa.me/919232795322?text=Hello%209T9%20EMPIRE%2C%20I%20want%20to%20shop."
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a class="btn whatsapp" href="https://wa.me/919232795322?text=Hello%209T9%20EMPIRE%2C%20I%20want%20to%20shop."
+          target="_blank" rel="noopener noreferrer">
           SHOP NOW ON WHATSAPP ↗
         </a>
       </div>
@@ -532,7 +549,7 @@
     <div class="visual">
       <div class="circle">
         <div class="can">
-          <span>9T9 EMPIRE</span>
+          <img src="logo-white.png" alt="9T9 EMPIRE" class="can-logo" />
         </div>
       </div>
       <div class="badge b1">REFRESH<br />REPEAT.</div>
@@ -613,6 +630,7 @@
     </div>
     <div class="mfg-card">
       <div class="mfg-header">
+        <img src="logo-brand.png" alt="9T9 EMPIRE Logo" style="height: 54px; width: auto; margin-bottom: 12px;" />
         <div class="tag" style="margin-bottom: 12px;">OFFICIAL UNIT & LICENSE</div>
         <h3 class="mfg-title">9T9 EMPIRE</h3>
         <div class="mfg-lic">
@@ -649,20 +667,12 @@
       <a class="btn primary" href="mailto:9t9empire2762@gmail.com">
         9t9empire2762@gmail.com
       </a>
-      <a
-        class="btn white"
-        href="https://www.instagram.com/drink9t9?igsi=MXFwazJmbzd6dGozcg=="
-        target="_blank"
-        rel="noopener noreferrer"
-      >
+      <a class="btn white" href="https://www.instagram.com/drink9t9?igsi=MXFwazJmbzd6dGozcg==" target="_blank"
+        rel="noopener noreferrer">
         @drink9t9 ON INSTAGRAM
       </a>
-      <a
-        class="btn whatsapp"
-        href="https://wa.me/919232795322?text=Hello%209T9%20EMPIRE%2C%20I%20want%20to%20shop."
-        target="_blank"
-        rel="noopener noreferrer"
-      >
+      <a class="btn whatsapp" href="https://wa.me/919232795322?text=Hello%209T9%20EMPIRE%2C%20I%20want%20to%20shop."
+        target="_blank" rel="noopener noreferrer">
         SHOP NOW ON WHATSAPP ↗
       </a>
     </div>
@@ -670,11 +680,15 @@
 
   <!-- Footer -->
   <footer>
-    <div>© 2025 9T9 EMPIRE. ALL RIGHTS RESERVED.</div>
+    <div style="display: flex; align-items: center; gap: 12px; flex-wrap: wrap;">
+      <img src="logo-white.png" alt="9T9 EMPIRE Logo" style="height: 36px; width: auto;" />
+      <span>© 2025 9T9 EMPIRE. ALL RIGHTS RESERVED.</span>
+    </div>
     <div>
       H.NO 03, GALI NO 01, NAVBAHAR COLONY, CHHOLA ROAD, BHOPAL, MADHYA PRADESH
       462001
     </div>
   </footer>
 </body>
+
 </html>
